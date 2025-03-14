@@ -30,12 +30,12 @@
             background: pink;
             display: flex;
             justify-content: center;
-            padding: 0; /* Remove padding to ensure full width */
+            padding: 0;
         }
         .image-container img {
-            width: 100%; /* Make image fill the container */
+            width: 100%;
             height: auto;
-            border-radius: 0; /* Remove rounded corners */
+            border-radius: 0;
         }
         .content {
             padding: 15px;
@@ -57,6 +57,11 @@
             margin-top: 5px;
         }
     </style>
+    <script>
+        function openFranchiseLink() {
+            window.open('https://oddburger.com/pages/franchise-what-we-offer', '_blank');
+        }
+    </script>
 </head>
 <body>
     <div class="card">
@@ -64,7 +69,7 @@
         <div class="image-container">
             <img src="https://vegworldmag.com/wp-content/uploads/2022/12/Odd-Burger-Calgary-Expansion.png" alt="Oddburger Franchise">
         </div>
-        <div class="content" onclick="window.location.href='https://oddburger.com/pages/franchise-what-we-offer';">
+        <div class="content" onclick="openFranchiseLink();">
             <div class="title">Oddburger Franchise</div>
             <div class="description">Learn all about how Oddburger works, how to use our resources, and start your own successful plant-based fast-food business!</div>
         </div>
